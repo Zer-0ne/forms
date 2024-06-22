@@ -37,10 +37,16 @@ export const basicForm = [
     },
     {
         name: 'confirmpassword',
+        display:'',
         label: 'Confirm Password',
         type: 'password',
         required: true,
-        option: [],
+        options: [],
+        sections: [{
+            name:'',
+            fields: []
+        }],
+        skills:[],
         placeholder: '••••••••'
     }, {
         name: 'btn',
@@ -87,7 +93,8 @@ export const jobApplication = [
                 type: 'email'
             },
         ],
-        display: 'hidden'
+        display: 'hidden',
+
     }, {
         name: 'phone',
         label: 'Phone Number',
@@ -139,10 +146,11 @@ export const jobApplication = [
     }, {
         name: 'interview-date',
         sections: [{
+            name:'',
             fields: []
         }],
         type: 'datetime-local',
-        option: [],
+        options: [],
         required: true,
         placeholder: '10-10-2024 10:40am',
         label: 'Preferred Interview Time'

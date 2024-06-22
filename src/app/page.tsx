@@ -23,7 +23,7 @@ const action: Record<string, Data> = {
   survey: {
     name: '',
     email: ''
-    , "survey-topic": '',
+    , "survey-topic": '' as string,
     feedback: ''
   }
 }

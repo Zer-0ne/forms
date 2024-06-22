@@ -138,7 +138,7 @@ export function Form({ handleSubmit, setData, data,  formActions, setformActions
                                 </LabelInputContainer>
                             }
                             {
-                                item.options?.includes(data?.['survey-topic'] as string) ?
+                                (item?.options as string[])?.includes(data?.['survey-topic'] as string) ?
                                     <div>
                                         {
                                             item.sections?.map((section, i) => (
