@@ -66,7 +66,9 @@ export function HomeBackground({ data, setIsSubmit, setData }: {
             >
                 Sahil khan
             </p>
-            <p>
+            <p
+                className="max-w-[100%]"
+            >
                 {JSON.stringify(data)}
             </p>
         </div>
